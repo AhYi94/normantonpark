@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://rsms.me/inter/inter.css');
+html {
+  background-color: rgba(249, 250, 251, 1);
+  color: rgba(31, 41, 55, 1);
+}
+
+:root {
+  font-family: 'Inter var', sans-serif;
+}
