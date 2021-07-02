@@ -11,3 +11,14 @@ html {
 :root {
   font-family: 'Inter var', sans-serif;
 }
+
+.menu-item:hover div {
+  display: block;
+}
+
+.menu-item.nuxt-link-active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(151, 133, 96, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}

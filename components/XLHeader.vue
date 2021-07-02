@@ -23,9 +23,7 @@
           class="inline-flex items-center space-x-px border-t border-gray-300"
         >
           <li class="hover:bg-theme-700">
-            <a
-              href="/"
-              aria-current="page"
+            <NuxtLink
               class="
                 inline-block
                 px-2
@@ -33,11 +31,10 @@
                 menu-item
                 hover:text-white
                 text-theme-900
-                nuxt-link-exact-active nuxt-link-active
               "
+              to="/"
+              >Home</NuxtLink
             >
-              Home
-            </a>
           </li>
           <li class="hover:bg-theme-700">
             <a
