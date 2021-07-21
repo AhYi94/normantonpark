@@ -2,10 +2,7 @@
   <div class="hidden xl:block">
     <div class="flex justify-between max-w-6xl px-4 mx-auto">
       <div class="flex items-center p-1">
-        <a
-          href="/"
-          aria-current="page"
-          class="w-44 nuxt-link-exact-active nuxt-link-active"
+        <a href="/" aria-current="page" class="w-44"
           ><svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -33,12 +30,12 @@
                 text-theme-900
               "
               to="/"
+              exact
               >Home</NuxtLink
             >
           </li>
           <li class="hover:bg-theme-700">
-            <a
-              href="/developer"
+            <NuxtLink
               class="
                 inline-block
                 px-2
@@ -47,23 +44,16 @@
                 hover:text-white
                 text-theme-900
               "
+              to="/developer"
+              >Developer</NuxtLink
             >
-              Developer
-            </a>
           </li>
           <li class="menu-item group hover:bg-theme-700">
-            <a
-              href="/#"
-              class="
-                inline-block
-                px-2
-                py-2
-                text-theme-900
-                group-hover:text-white
-              "
+            <NuxtLink
+              class="inline-block px-2 py-2 hover:text-white text-theme-900"
+              :to="$nuxt.$route.path + '#'"
+              >Normanton Park</NuxtLink
             >
-              Normanton Park
-            </a>
             <div
               class="absolute z-10 hidden py-2 -ml-2 transition"
               style="min-width: 300px"
@@ -80,20 +70,19 @@
                 "
               >
                 <li>
-                  <a
-                    href="/project-details"
+                  <NuxtLink
                     class="
                       inline-block
-                      w-full
                       px-2
                       py-2
                       menu-item
+                      hover:text-white
                       text-theme-900
-                      hover:bg-theme-100
                     "
+                    to="/project-details"
                   >
-                    Project Details
-                  </a>
+                    Project Details</NuxtLink
+                  >
                 </li>
                 <li>
                   <a
@@ -211,18 +200,11 @@
             </div>
           </li>
           <li class="menu-item group hover:bg-theme-700">
-            <a
-              href="/#"
-              class="
-                inline-block
-                px-2
-                py-2
-                text-theme-900
-                group-hover:text-white
-              "
+            <NuxtLink
+              class="inline-block px-2 py-2 hover:text-white text-theme-900"
+              :to="$nuxt.$route.path + '#'"
+              >Kent Ridge</NuxtLink
             >
-              Kent Ridge
-            </a>
             <div
               class="absolute z-10 hidden py-2 -ml-2 transition"
               style="min-width: 300px"
@@ -471,3 +453,6 @@
     </div>
   </div>
 </template>
+<script>
+export default {}
+</script>

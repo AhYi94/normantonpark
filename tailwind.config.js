@@ -22,6 +22,14 @@ module.exports = {
           900: '#655940',
         },
       },
+
+      keyframes: {
+        pulse: {
+          '0%, ': { transform: 'scale(1)', opacity: 0 },
+          '50%, ': { opacity: 1 },
+          '100%': { transform: 'scale(1.2)', opacity: 0 },
+        },
+      },
     },
   },
   variants: {
