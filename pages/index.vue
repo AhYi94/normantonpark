@@ -387,7 +387,7 @@
           </div>
         </div>
       </section>
-      <HomeBookAppointment />
+      <BookAppointment />
     </div>
   </div>
 </template>

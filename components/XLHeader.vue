@@ -73,11 +73,12 @@
                   <NuxtLink
                     class="
                       inline-block
+                      w-full
                       px-2
                       py-2
                       menu-item
-                      hover:text-white
                       text-theme-900
+                      hover:bg-theme-100
                     "
                     to="/project-details"
                   >
