@@ -11,10 +11,11 @@
           <h3 class="text-xl font-semibold sm:text-2xl text-center">
             1 Bedroom
           </h3>
+          <ImageModal image="1BR-a.png"/>
           <div class="grid grid-cols-2 gap-2 sm:gap-6 sm:grid-cols-3">
             <div class="space-y-1 cursor-pointer" >
               <img
-                src="/_nuxt/img/1BR-a.b599e2f.png"
+                src="~assets/img/1BR-a.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -22,7 +23,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/1BR-aR.dbf1348.png"
+                src="~assets/img/1BR-aR.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -30,7 +31,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/1BR-b.c6e19fd.png"
+                src="~assets/img/1BR-b.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -38,7 +39,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/1BR-bR.dd95b37.png"
+                src="~assets/img/1BR-bR.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -46,7 +47,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/1BR-c.70baa31.png"
+                src="~assets/img/1BR-c.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -54,7 +55,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/1BR-cR.b23a22f.png"
+                src="~assets/img/1BR-cR.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -62,7 +63,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/1BR-Sa.eb899e2.png"
+                src="~assets/img/1BR-Sa.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -70,7 +71,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/1BR-Sb.bcfb84e.png"
+                src="~assets/img/1BR-Sb.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -78,7 +79,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/1BR-Sc.29306b5.png"
+                src="~assets/img/1BR-Sc.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -93,7 +94,7 @@
           <div class="grid grid-cols-2 gap-2 sm:gap-6 sm:grid-cols-3">
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/2BR-Ca.ea1f266.png"
+                src="~assets/img/2BR-Ca.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -101,7 +102,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/2BR-CaR.35cdf08.png"
+                src="~assets/img/2BR-CaR.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -109,7 +110,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/2BR-Cb.dd1f9e5.png"
+                src="~assets/img/2BR-Cb.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -117,7 +118,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/2BR-CbR.477fbcf.png"
+                src="~assets/img/2BR-CbR.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -125,7 +126,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/2BR-Pa.3d7c472.png"
+                src="~assets/img/2BR-Pa.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -133,7 +134,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/2BR-Pb.7a5c4c3.png"
+                src="~assets/img/2BR-Pb.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -141,7 +142,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/2BR-Pc.38e4751.png"
+                src="~assets/img/2BR-Pc.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -149,7 +150,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/2BR-Pd.f8934c2.png"
+                src="~assets/img/2BR-Pd.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -157,7 +158,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/2BR-Pe.e064cb4.png"
+                src="~assets/img/2BR-Pe.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -165,7 +166,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/2BR-Pf.912941e.png"
+                src="~assets/img/2BR-Pf.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -173,7 +174,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/2BR-Pg.5bb593d.png"
+                src="~assets/img/2BR-Pg.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -181,7 +182,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/2BR-Ph.45ef8fc.png"
+                src="~assets/img/2BR-Ph.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -189,7 +190,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/2BR-Sa.7b8b4c2.png"
+                src="~assets/img/2BR-Sa.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -197,7 +198,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/2BR-Sb.5545343.png"
+                src="~assets/img/2BR-Sb.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -212,7 +213,7 @@
           <div class="grid grid-cols-2 gap-2 sm:gap-6 sm:grid-cols-3">
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/3BR-Ca.b16916e.png"
+                src="~assets/img/3BR-Ca.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -220,7 +221,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/3BR-CaR.cc51ca3.png"
+                src="~assets/img/3BR-CaR.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -228,7 +229,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/3BR-CaRR.badeeda.png"
+                src="~assets/img/3BR-CaRR.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -236,7 +237,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/3BR-Cb.6e8d923.png"
+                src="~assets/img/3BR-Cb.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -244,7 +245,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/3BR-CbR.0c799de.png"
+                src="~assets/img/3BR-CbR.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -252,7 +253,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/3BR-Cc.9e10150.png"
+                src="~assets/img/3BR-Cc.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -260,7 +261,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/3BR-CcR.b35c46d.png"
+                src="~assets/img/3BR-CcR.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -268,7 +269,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/3BR-Cd.6bcc1c2.png"
+                src="~assets/img/3BR-Cd.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -276,7 +277,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/3BR-Pa.9818eeb.png"
+                src="~assets/img/3BR-Pa.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -284,7 +285,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/3BR-Pb.990845f.png"
+                src="~assets/img/3BR-Pb.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -292,7 +293,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/3BR-Pc.5ee7c72.png"
+                src="~assets/img/3BR-Pc.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -300,7 +301,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/3BR-Pd.2c0a5e7.png"
+                src="~assets/img/3BR-Pd.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -308,7 +309,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/3BR-Pe.1991672.png"
+                src="~assets/img/3BR-Pe.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -323,7 +324,7 @@
           <div class="grid grid-cols-2 gap-2 sm:gap-6 sm:grid-cols-3">
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/4BR-Ca.f5c0986.png"
+                src="~assets/img/4BR-Ca.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -331,7 +332,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/4BR-Pa.9218304.png"
+                src="~assets/img/4BR-Pa.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -339,7 +340,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/4BR-Pb.f4f1e57.png"
+                src="~assets/img/4BR-Pb.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -347,7 +348,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/4BR-Pc.6caad49.png"
+                src="~assets/img/4BR-Pc.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -362,7 +363,7 @@
           <div class="grid grid-cols-2 gap-2 sm:gap-6 sm:grid-cols-3">
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/5BR.b89697a.png"
+                src="~assets/img/5BR.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -375,7 +376,7 @@
           <div class="grid grid-cols-1">
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/terrace_1.b7c642b.png"
+                src="~assets/img/terrace_1.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -383,7 +384,7 @@
             </div>
             <div class="space-y-1 cursor-pointer">
               <img
-                src="/_nuxt/img/terrace_2.69da781.png"
+                src="~assets/img/terrace_2.png"
                 alt=""
                 class="mx-auto rounded"
               />
@@ -471,7 +472,7 @@
           <div class="p-4 bg-white sm:p-6">
             <div class="space-y-2 text-center">
               <img
-                src="/_nuxt/img/2BR-CaR.24a0574.png"
+                src="~assets/img/2BR-CaR.png"
                 alt=""
                 class="mx-auto rounded"
               />

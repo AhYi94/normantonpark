@@ -1,31 +1,11 @@
 <template>
   <div>
-    <button
-      class="
-        bg-pink-500
-        text-white
-        active:bg-pink-600
-        font-bold
-        uppercase
-        text-sm
-        px-6
-        py-3
-        rounded
-        shadow
-        hover:shadow-lg
-        outline-none
-        focus:outline-none
-        mr-1
-        mb-1
-        ease-linear
-        transition-all
-        duration-150
-      "
-      type="button"
-      v-on:click="toggleModal()"
-    >
-      Open large modal
-    </button>
+    <div class="grid grid-cols-2 gap-2 sm:gap-6 sm:grid-cols-3">
+      <div class="space-y-1 cursor-pointer" v-on:click="toggleModal()">
+        <img :src="imageSource" alt="" class="mx-auto rounded" />
+        <p class="text-center">Type 5BR</p>
+      </div>
+    </div>
     <div
       v-if="showModal"
       class="
@@ -187,6 +167,9 @@ export default {
   directives: {
     clickOutside: vClickOutside.directive,
   },
+  props: {
+    image: String,
+  },
   name: 'large-modal',
   data() {
     return {
@@ -199,6 +182,11 @@ export default {
     },
     externalClick() {
       this.showModal = false
+    },
+  },
+  computed: {
+    imageSource() {
+      return require(`~/assets/img/${this.image}`)
     },
   },
 }
