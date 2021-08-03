@@ -6,3 +6,9 @@
     <Footer />
   </div>
 </template>
+
+<style>
+html {
+  overflow-x: hidden;
+}
+</style>
