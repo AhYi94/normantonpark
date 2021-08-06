@@ -86,8 +86,7 @@
                   >
                 </li>
                 <li>
-                  <a
-                    href="/location-map"
+                  <NuxtLink
                     class="
                       inline-block
                       w-full
@@ -97,13 +96,14 @@
                       text-theme-900
                       hover:bg-theme-100
                     "
+                    to="/location-map"
                   >
-                    Location Map
-                  </a>
+                    Location Map</NuxtLink
+                  >
                 </li>
                 <li>
-                  <a
-                    href="/site-plan"
+                  <NuxtLink
+                    to="/site-plan"
                     class="
                       inline-block
                       w-full
@@ -115,11 +115,11 @@
                     "
                   >
                     Site Plan
-                  </a>
+                  </NuxtLink>
                 </li>
                 <li>
-                  <a
-                    href="/floor-plan"
+                  <NuxtLink
+                    to="/floor-plan"
                     class="
                       inline-block
                       w-full
@@ -131,11 +131,11 @@
                     "
                   >
                     Floor Plan
-                  </a>
+                  </NuxtLink>
                 </li>
                 <li>
-                  <a
-                    href="/pricing"
+                  <NuxtLink
+                    to="/pricing"
                     class="
                       inline-block
                       w-full
@@ -147,11 +147,11 @@
                     "
                   >
                     Pricing
-                  </a>
+                  </NuxtLink>
                 </li>
                 <li>
-                  <a
-                    href="/gallery"
+                  <NuxtLink
+                    to="/gallery"
                     class="
                       inline-block
                       w-full
@@ -163,11 +163,11 @@
                     "
                   >
                     Gallery
-                  </a>
+                  </NuxtLink>
                 </li>
                 <li>
-                  <a
-                    href="/e-brochure"
+                  <NuxtLink
+                    to="/e-brochure"
                     class="
                       inline-block
                       w-full
@@ -179,11 +179,11 @@
                     "
                   >
                     e-Brochure
-                  </a>
+                  </NuxtLink>
                 </li>
                 <li>
-                  <a
-                    href="/balance-units-chart"
+                  <NuxtLink
+                    to="/balance-units-chart"
                     class="
                       inline-block
                       w-full
@@ -195,7 +195,7 @@
                     "
                   >
                     Balance Units Chart
-                  </a>
+                  </NuxtLink>
                 </li>
               </ul>
             </div>
@@ -222,8 +222,8 @@
                 "
               >
                 <li>
-                  <a
-                    href="/greater-southern-waterfront-ura-masterplan"
+                  <NuxtLink
+                    to="/greater-southern-waterfront-ura-masterplan"
                     class="
                       inline-block
                       w-full
@@ -235,11 +235,11 @@
                     "
                   >
                     Greater Southern Waterfront URA Masterplan
-                  </a>
+                  </NuxtLink>
                 </li>
                 <li>
-                  <a
-                    href="/queenstown-ura-masterplan"
+                  <NuxtLink
+                    to="/queenstown-ura-masterplan"
                     class="
                       inline-block
                       w-full
@@ -251,11 +251,11 @@
                     "
                   >
                     Queenstown URA Masterplan
-                  </a>
+                  </NuxtLink>
                 </li>
                 <li>
-                  <a
-                    href="/bukit-merah-ura-masterplan"
+                  <NuxtLink
+                    to="/bukit-merah-ura-masterplan"
                     class="
                       inline-block
                       w-full
@@ -267,14 +267,14 @@
                     "
                   >
                     Bukit Merah URA Masterplan
-                  </a>
+                  </NuxtLink>
                 </li>
               </ul>
             </div>
           </li>
           <li class="menu-item group hover:bg-theme-700">
-            <a
-              href="/#"
+            <NuxtLink
+              to="/#"
               class="
                 inline-block
                 px-2
@@ -284,7 +284,7 @@
               "
             >
               Financing
-            </a>
+            </NuxtLink>
             <div
               class="absolute z-10 hidden py-2 -ml-2 transition"
               style="min-width: 300px"
@@ -301,8 +301,8 @@
                 "
               >
                 <li>
-                  <a
-                    href="/financing/stamp-duty"
+                  <NuxtLink
+                    to="/financing/stamp-duty"
                     class="
                       inline-block
                       w-full
@@ -314,11 +314,11 @@
                     "
                   >
                     Stamp Duty
-                  </a>
+                  </NuxtLink>
                 </li>
                 <li>
-                  <a
-                    href="/financing/payment-scheme"
+                  <NuxtLink
+                    to="/financing/payment-scheme"
                     class="
                       inline-block
                       w-full
@@ -330,11 +330,11 @@
                     "
                   >
                     Payment Scheme
-                  </a>
+                  </NuxtLink>
                 </li>
                 <li>
-                  <a
-                    href="/financing/housing-loan-information"
+                  <NuxtLink
+                    to="/financing/housing-loan-information"
                     class="
                       inline-block
                       w-full
@@ -346,7 +346,7 @@
                     "
                   >
                     Housing Loan Information
-                  </a>
+                  </NuxtLink>
                 </li>
                 <li class="py-3 text-center text-gray-600 select-none">
                   <div class="relative border-t border-gray-500 border-dashed">
@@ -356,8 +356,8 @@
                   </div>
                 </li>
                 <li>
-                  <a
-                    href="/financing/maximum-loan-eligibility-calculator-tdsr"
+                  <NuxtLink
+                    to="/financing/maximum-loan-eligibility-calculator-tdsr"
                     class="
                       inline-block
                       w-full
@@ -369,11 +369,11 @@
                     "
                   >
                     Maximum Loan Eligibility Calculator (TDSR)
-                  </a>
+                  </NuxtLink>
                 </li>
                 <li>
-                  <a
-                    href="/financing/rental-yield-calculator"
+                  <NuxtLink
+                    to="/financing/rental-yield-calculator"
                     class="
                       inline-block
                       w-full
@@ -385,14 +385,14 @@
                     "
                   >
                     Rental Yield Calculator
-                  </a>
+                  </NuxtLink>
                 </li>
               </ul>
             </div>
           </li>
           <li class="hover:bg-theme-700">
-            <a
-              href="/book-an-appointment"
+            <NuxtLink
+              to="/book-an-appointment"
               class="
                 inline-block
                 px-2
@@ -403,11 +403,11 @@
               "
             >
               Book Showflat
-            </a>
+            </NuxtLink>
           </li>
           <li class="hover:bg-theme-700">
-            <a
-              href="/contact-us"
+            <NuxtLink
+              to="/contact-us"
               class="
                 inline-block
                 px-2
@@ -418,13 +418,13 @@
               "
             >
               Contact
-            </a>
+            </NuxtLink>
           </li>
         </ul>
       </div>
       <div class="flex flex-wrap items-center p-1">
-        <a
-          href="/book-an-appointment"
+        <NuxtLink
+          to="/book-an-appointment"
           class="
             inline-block
             font-medium
@@ -435,7 +435,7 @@
             hover:bg-theme-900
             p-2
           "
-          >Get VVIP Discount</a
+          >Get VVIP Discount</NuxtLink
         >
       </div>
     </div>
