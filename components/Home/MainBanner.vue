@@ -26,7 +26,7 @@
             ></div>
             <img
               data-v-750ad506=""
-              src="~/assets/img/tablet.461cce4.png"
+              src="~/assets/img/tablet.png"
               alt=""
               class="relative ml-auto max-h-64 sm:max-h-80"
             />
@@ -105,7 +105,7 @@
         <a href="/floor-plan" class=""
           ><div class="max-w-sm mx-auto group">
             <img
-              src="~/assets/img/home-floor-plan.b1628fd.jpg"
+              src="~/assets/img/home-floor-plan.jpg"
               alt="Floor Plan"
               class="w-full rounded shadow"
             />
@@ -143,7 +143,7 @@
         <a href="/book-an-appointment" class=""
           ><div class="max-w-sm mx-auto group">
             <img
-              src="~/assets/img/home-book-appointment.2f3d27b.jpg"
+              src="~/assets/img/home-book-appointment.jpg"
               alt="Get Direct Discounts"
               class="w-full rounded shadow"
             />
@@ -181,7 +181,7 @@
         <a href="/contact-us" class=""
           ><div class="max-w-sm mx-auto group">
             <img
-              src="~/assets/img/home-best-price.af65ea0.jpg"
+              src="~/assets/img/home-best-price.jpg"
               alt="Daily Price Updates"
               class="w-full rounded shadow"
             />
@@ -227,6 +227,6 @@ export default {}
 
 <style scope>
 #main_banner {
-  background-image: url('~assets/img/main-banner.ecdf10f.png');
+  background-image: url('~assets/img/main-banner.png');
 }
 </style>

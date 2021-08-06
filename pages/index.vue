@@ -85,7 +85,7 @@
               "
             >
               <img
-                src="~/assets/img/Normanton-Park-Pool-v3-scaled-348x200.3ca09dd.jpg"
+                src="~/assets/img/Normanton-Park-Pool-v3-scaled-348x200.jpg"
                 alt="Normanton Park"
                 class="mx-auto rounded"
               />
@@ -144,7 +144,7 @@
               "
             >
               <img
-                src="~/assets/img/Normanton-Park-Location-348x200.9affea0.jpg"
+                src="~/assets/img/Normanton-Park-Location-348x200.jpg"
                 alt="Normanton Park Location Map"
                 class="mx-auto rounded"
               />
@@ -204,7 +204,7 @@
               "
             >
               <img
-                src="~/assets/img/direct-developer-sales.87ee5e0.png"
+                src="~/assets/img/direct-developer-sales.png"
                 alt="Normanton Park Showflat"
                 class="mx-auto rounded"
               />
@@ -365,22 +365,22 @@
           </div>
           <div class="grid grid-cols-2 gap-2 lg:gap-6 lg:grid-cols-4">
             <img
-              src="~assets/img/home-artist-impression-thumb-1.8c0f36f.jpg"
+              src="~assets/img/home-artist-impression-thumb-1.jpg"
               alt=""
               class="object-cover w-full h-auto rounded"
             />
             <img
-              src="~assets/img/home-artist-impression-thumb-2.77c4157.jpg"
+              src="~assets/img/home-artist-impression-thumb-2.jpg"
               alt=""
               class="object-cover w-full h-auto rounded"
             />
             <img
-              src="~assets/img/home-artist-impression-thumb-3.be3f617.jpg"
+              src="~assets/img/home-artist-impression-thumb-3.jpg"
               alt=""
               class="object-cover w-full h-auto rounded"
             />
             <img
-              src="~assets/img/home-artist-impression-thumb-4.6e6cb5b.jpg"
+              src="~assets/img/home-artist-impression-thumb-4.jpg"
               alt=""
               class="object-cover w-full h-auto rounded"
             />

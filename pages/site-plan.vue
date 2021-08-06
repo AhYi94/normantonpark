@@ -8,7 +8,7 @@
     <section>
       <div class="max-w-6xl px-4 py-12 mx-auto space-y-6">
         <img
-          src="~assets/img/site-plan.dbb3f16.png"
+          src="~assets/img/site-plan.png"
           alt="Site Plan"
           class="mx-auto"
         />

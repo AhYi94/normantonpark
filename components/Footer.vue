@@ -6,7 +6,7 @@
           <div class="space-y-2">
             <h4 class="text-xl font-medium">Proudly Developed By</h4>
             <img
-              src="~assets/img/developer-logo.3f6cb4d.png"
+              src="~assets/img/developer-logo.png"
               alt="SingHaiYi Logo"
               class="object-contain h-36"
             />

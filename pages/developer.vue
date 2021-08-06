@@ -11,7 +11,7 @@
           <h3 class="text-xl font-semibold sm:text-2xl">Developed By</h3>
           <div>
             <img
-              src="/_nuxt/img/developer-logo.3f6cb4d.png"
+              src="~assets/img/developer-logo.png"
               alt="Kingsford Logo"
               class="mx-auto"
             />
