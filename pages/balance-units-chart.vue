@@ -22,6 +22,7 @@
         <div>
           <iframe
             src="/public/pdf/normanton-park-balance-units-chart.pdf"
+            type="application/pdf"
             frameborder="0"
             class="w-full h-96"
           ></iframe>
