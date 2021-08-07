@@ -91,8 +91,8 @@
         </div>
       </section>
       <section class="py-6">
-        <a
-          href="/project-details"
+        <NuxtLink
+          to="/project-details"
           class="
             inline-flex
             items-center
@@ -122,7 +122,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
             ></path></svg
-        ></a>
+        ></NuxtLink>
       </section>
     </div>
     <BookAppointment />
