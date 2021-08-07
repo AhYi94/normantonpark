@@ -183,8 +183,8 @@
           </div>
         </div>
         <section class="py-6">
-          <a
-            href="/financing/maximum-loan-eligibility-calculator-tdsr"
+          <NuxtLink
+            to="/financing/maximum-loan-eligibility-calculator-tdsr"
             class="
               inline-flex
               items-center
@@ -214,7 +214,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               ></path></svg
-          ></a>
+          ></NuxtLink>
         </section>
       </div>
     </section>

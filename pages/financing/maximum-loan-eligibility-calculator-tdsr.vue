@@ -420,8 +420,8 @@
           </div>
         </div>
         <section class="py-6">
-          <a
-            href="/financing/rental-yield-calculator"
+          <NuxtLink
+            to="/financing/rental-yield-calculator"
             class="
               inline-flex
               items-center
@@ -451,7 +451,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               ></path></svg
-          ></a>
+          ></NuxtLink>
         </section>
       </div>
     </section>

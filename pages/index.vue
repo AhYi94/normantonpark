@@ -9,10 +9,10 @@
           </h3>
           <p>
             Latest Unit Sold: #03-63 (1BR) on 06-May-2021 |
-            <a
-              href="/balance-units-chart"
+            <NuxtLink
+              to="/balance-units-chart"
               class="font-medium hover:underline text-theme-600"
-              >See the Balance Units Chart</a
+              >See the Balance Units Chart</NuxtLink
             >
           </p>
         </div>
@@ -26,24 +26,24 @@
               <ul>
                 <li>
                   <strong>06-05-2021:</strong>
-                  <a href="/book-an-appointment" class="!text-theme-600"
-                    >Book an Appointment</a
+                  <NuxtLink to="/book-an-appointment" class="!text-theme-600"
+                    >Book an Appointment</NuxtLink
                   >
                   to view Normanton Park Show Flat and get Direct Developer
                   Price + Discounts.
                 </li>
                 <li>
                   <strong>11-02-2021:</strong> Check our latest
-                  <a href="/pricing" class="!text-theme-600">
+                  <NuxtLink to="/pricing" class="!text-theme-600">
                     Normanton Park Pricing
-                  </a>
+                  </NuxtLink>
                   here
                 </li>
                 <li>
                   <strong>11-02-2021:</strong> Check our latest
-                  <a href="/balance-units-chart" class="!text-theme-600">
+                  <NuxtLink to="/balance-units-chart" class="!text-theme-600">
                     Normanton Park Balance Unit
-                  </a>
+                  </NuxtLink>
                   here
                 </li>
                 <li>
@@ -57,10 +57,10 @@
                 <li>
                   <strong>11-12-2020:</strong> Check your loan eligibility by
                   calculating at
-                  <a
-                    href="/financing/maximum-loan-eligibility-calculator-tdsr"
+                  <NuxtLink
+                    to="/financing/maximum-loan-eligibility-calculator-tdsr"
                     class="!text-theme-600"
-                    >Max Loan Eligibility Calculator (TDSR)</a
+                    >Max Loan Eligibility Calculator (TDSR)</NuxtLink
                   >
                   on this website.
                 </li>
@@ -94,10 +94,10 @@
                 <p>
                   Normanton Parkis formerly known as 488-unit HUDC (Normanton
                   Park), proudly developed by
-                  <a
-                    href="/developer"
+                  <NuxtLink
+                    to="/developer"
                     class="transition text-theme-600 hover:text-theme-700"
-                    >Kingsford Hurray Development</a
+                    >Kingsford Hurray Development</NuxtLink
                   >. Kingsford Development was founded during year 2000 by Hong
                   Kong XINFENG Investment Co. Ltd.
                 </p>
@@ -152,10 +152,10 @@
               <div class="space-y-4">
                 <p>
                   Normanton Park is situated in Coveted District Five.
-                  <a
-                    href="/location-map"
+                  <NuxtLink
+                    to="/location-map"
                     class="transition text-theme-600 hover:text-theme-700"
-                    >Located at One Normanton Park</a
+                    >Located at One Normanton Park</NuxtLink
                   >
                   road with Kent Ridge Hill Park as the backdrop. It is formerly
                   a HUDC development with 488 units, which was acquired by
@@ -212,10 +212,10 @@
               <div class="space-y-4">
                 <p>
                   Secure your
-                  <a
-                    href="/book-an-appointment"
+                  <NuxtLink
+                    to="/book-an-appointment"
                     class="transition text-theme-600 hover:text-theme-700"
-                    >Normanton Park Showflat appointment here</a
+                    >Normanton Park Showflat appointment here</NuxtLink
                   >, register via our official site. Or contact us at +65 6100
                   3337 before making your way down the showflat. Showflat will
                   be closed on certain days due to routine maintenance work or
@@ -230,10 +230,10 @@
                 </p>
                 <p>
                   All registrants who have
-                  <a
-                    href="/book-an-appointment"
+                  <NuxtLink
+                    to="/book-an-appointment"
                     class="transition text-theme-600 hover:text-theme-700"
-                    >registered an appointment here</a
+                    >registered an appointment here</NuxtLink
                   >
                   will receive Best Developer Pricing and COMMISION are
                   NON-payable. Please be advise that units for sale at Normanton
@@ -273,8 +273,8 @@
               <h1 class="text-2xl font-medium text-theme-500">
                 Book An Appointment To Get Direct Developer Price
               </h1>
-              <a
-                href="/book-an-appointment"
+              <NuxtLink
+                to="/book-an-appointment"
                 class="
                   inline-block
                   font-medium
@@ -288,7 +288,7 @@
                 "
               >
                 Book an Appointment
-              </a>
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -309,20 +309,20 @@
               Built in 1977 for Singapore Arm Forces personnel, was privatised
               to condominium in 2012. First collective sales was put up in 2015
               but successful till 2. collective sales in 2017.
-              <a
-                href="/developer"
+              <NuxtLink
+                to="/developer"
                 class="transition text-theme-600 hover:text-theme-700"
-                >Kingsford Huray Development</a
+                >Kingsford Huray Development</NuxtLink
               >
               triumphantly won the bid at the price of $8301M.
             </p>
             <p>
               Positioned in the Coveted District 5,
-              <a
-                href="/location-map"
+              <NuxtLink
+                to="/location-map"
                 class="transition text-theme-600 hover:text-theme-700"
                 >Normanton Park Condo is located at 1-13 Normanton Park
-                Singapore</a
+                Singapore</NuxtLink
               >. This will be the most desired upcoming mega launch in the area.
               9 grandiloquent towers topping at the height of 24-levels, comes
               with stunning views overlooking on different part of Singapore.

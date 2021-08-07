@@ -2975,8 +2975,8 @@
           </div>
         </div>
         <section class="py-6">
-          <a
-            href="/gallery"
+          <NuxtLink
+            to="/gallery"
             class="
               inline-flex
               items-center
@@ -3006,7 +3006,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               ></path></svg
-          ></a>
+          ></NuxtLink>
         </section>
       </div>
     </section>
@@ -3198,10 +3198,10 @@
                         />
                         <span class="ml-2"
                           >I have read and agree to the
-                          <a
-                            href="/privacy-policy"
+                          <NuxtLink
+                            to="/privacy-policy"
                             class="font-medium underline text-theme-600"
-                            >Privacy Policy</a
+                            >Privacy Policy</NuxtLink
                           ></span
                         ></label
                       >

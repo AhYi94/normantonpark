@@ -18,8 +18,8 @@
           class="mx-auto"
         />
         <section class="py-6">
-          <a
-            href="/bukit-merah-ura-masterplan"
+          <NuxtLink
+            to="/bukit-merah-ura-masterplan"
             class="
               inline-flex
               items-center
@@ -49,7 +49,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               ></path></svg
-          ></a>
+          ></NuxtLink>
         </section>
       </div>
     </section>

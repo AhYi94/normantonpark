@@ -1787,8 +1787,8 @@
           </div>
         </div>
         <section class="py-6">
-          <a
-            href="/site-plan"
+          <NuxtLink
+            to="/site-plan"
             class="
               inline-flex
               items-center
@@ -1818,7 +1818,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               ></path></svg
-          ></a>
+          ></NuxtLink>
         </section>
       </div>
     </section>

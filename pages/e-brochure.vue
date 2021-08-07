@@ -8,15 +8,15 @@
     <section>
       <div class="max-w-6xl px-4 py-12 mx-auto space-y-6">
         <div class="flex justify-center">
-          <a href="/public/pdf/normanton-park-e-brochure.pdf" target="_blank"
+          <NuxtLink to="/public/pdf/normanton-park-e-brochure.pdf" target="_blank"
             ><img
               src="/_nuxt/img/normanton-park-cover.0158f94.png"
               alt="Normanton Park e-Brochure"
-          /></a>
+          /></NuxtLink>
         </div>
         <section class="py-6">
-          <a
-            href="/balance-units-chart"
+          <NuxtLink
+            to="/balance-units-chart"
             class="
               inline-flex
               items-center
@@ -46,7 +46,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               ></path></svg
-          ></a>
+          ></NuxtLink>
         </section>
       </div>
     </section>

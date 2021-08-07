@@ -2,8 +2,8 @@
   <section>
     <div data-v-750ad506="" class="shadow-md">
       <div
-        data-v-750ad506=""
         id="main_banner"
+        data-v-750ad506=""
         class="overflow-hidden bg-center bg-no-repeat bg-cover max-h-96"
         style="height: 500px"
       >
@@ -64,9 +64,9 @@
                 >
               </div>
               <div data-v-750ad506="" class="py-2">
-                <a
+                <NuxtLink
                   data-v-750ad506=""
-                  href="/book-an-appointment"
+                  to="/book-an-appointment"
                   class="
                     px-4
                     py-2
@@ -81,7 +81,7 @@
                   "
                 >
                   Get Developer Price
-                </a>
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@
     </div>
     <div class="max-w-6xl px-4 mx-auto -mt-36">
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-        <a href="/floor-plan" class=""
+        <NuxtLink to="/floor-plan" class=""
           ><div class="max-w-sm mx-auto group">
             <img
               src="~/assets/img/home-floor-plan.jpg"
@@ -138,9 +138,9 @@
                 </div>
               </div>
             </div>
-          </div></a
-        >
-        <a href="/book-an-appointment" class=""
+          </div>
+        </NuxtLink>
+        <NuxtLink to="/book-an-appointment" class=""
           ><div class="max-w-sm mx-auto group">
             <img
               src="~/assets/img/home-book-appointment.jpg"
@@ -176,9 +176,9 @@
                 </div>
               </div>
             </div>
-          </div></a
-        >
-        <a href="/contact-us" class=""
+          </div>
+        </NuxtLink>
+        <NuxtLink to="/contact-us" class=""
           ><div class="max-w-sm mx-auto group">
             <img
               src="~/assets/img/home-best-price.jpg"
@@ -214,8 +214,8 @@
                 </div>
               </div>
             </div>
-          </div></a
-        >
+          </div>
+        </NuxtLink>
       </div>
     </div>
   </section>

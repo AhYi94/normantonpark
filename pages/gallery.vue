@@ -59,8 +59,8 @@
           />
         </div>
         <section class="py-6">
-          <a
-            href="/e-brochure"
+          <NuxtLink
+            to="/e-brochure"
             class="
               inline-flex
               items-center
@@ -90,7 +90,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               ></path></svg
-          ></a>
+          ></NuxtLink>
         </section>
       </div>
     </section>

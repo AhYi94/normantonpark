@@ -282,8 +282,8 @@
           </div>
         </div>
         <section class="py-6">
-          <a
-            href="/financing/payment-scheme"
+          <NuxtLink
+            to="/financing/payment-scheme"
             class="
               inline-flex
               items-center
@@ -313,7 +313,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               ></path></svg
-          ></a>
+          ></NuxtLink>
         </section>
       </div>
     </section>

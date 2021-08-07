@@ -42,8 +42,8 @@
           <ImageModal :bed-room-prop="Terrance" />
         </div>
         <section class="py-6">
-          <a
-            href="/pricing"
+          <NuxtLink
+            to="/pricing"
             class="
               inline-flex
               items-center
@@ -73,7 +73,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               ></path></svg
-          ></a>
+          ></NuxtLink>
         </section>
       </div>
     </section>

@@ -27,17 +27,17 @@
           ></iframe>
         </div>
         <div class="text-center">
-          <a
-            href="/public/pdf/normanton-park-balance-units-chart.pdf"
+          <NuxtLink
+            to="/public/pdf/normanton-park-balance-units-chart.pdf"
             target="_blank"
             class="font-medium hover:underline"
           >
             Click here to view larger chart
-          </a>
+          </NuxtLink>
         </div>
         <section class="py-6">
-          <a
-            href="/greater-southern-waterfront-ura-masterplan"
+          <NuxtLink
+            to="/greater-southern-waterfront-ura-masterplan"
             class="
               inline-flex
               items-center
@@ -67,7 +67,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               ></path></svg
-          ></a>
+          ></NuxtLink>
         </section>
       </div>
     </section>

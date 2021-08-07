@@ -156,10 +156,10 @@
                   />
                   <span class="ml-2"
                     >I have read and agree to the
-                    <a
-                      href="/privacy-policy"
+                    <NuxtLink
+                      to="/privacy-policy"
                       class="font-medium underline text-theme-600"
-                      >Privacy Policy</a
+                      >Privacy Policy</NuxtLink
                     ></span
                   ></label
                 >

@@ -13,8 +13,8 @@
           class="mx-auto"
         />
         <section class="py-6">
-          <a
-            href="/floor-plan"
+          <NuxtLink
+            to="/floor-plan"
             class="
               inline-flex
               items-center
@@ -44,7 +44,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               ></path></svg
-          ></a>
+          ></NuxtLink>
         </section>
       </div>
     </section>

@@ -24,21 +24,21 @@
             <h4 class="text-xl font-medium">Site Links</h4>
             <ul class="space-y-3 text-gray-600">
               <li>
-                <a
-                  href="/"
+                <NuxtLink
+                  to="/"
                   aria-current="page"
                   class="nuxt-link-exact-active nuxt-link-active"
-                  >Normanton Park</a
+                  >Normanton Park</NuxtLink
                 >
               </li>
-              <li><a href="/floor-plan" class="">Floor Plan</a></li>
-              <li><a href="/pricing" class="">Pricing</a></li>
+              <li><NuxtLink to="/floor-plan" class="">Floor Plan</NuxtLink></li>
+              <li><NuxtLink to="/pricing" class="">Pricing</NuxtLink></li>
               <li>
-                <a href="/book-an-appointment" class=""
-                  >Book Appointment (Direct Price)</a
+                <NuxtLink to="/book-an-appointment" class=""
+                  >Book Appointment (Direct Price)</NuxtLink
                 >
               </li>
-              <li><a href="/contact-us" class="">Contact Us</a></li>
+              <li><NuxtLink to="/contact-us" class="">Contact Us</NuxtLink></li>
             </ul>
           </div>
           <div class="space-y-2">
@@ -101,7 +101,7 @@
                     stroke-linejoin="round"
                   ></path>
                 </svg>
-                <a href="+6561003337">+65 6100-3337</a>
+                <a href="tel:+6561003337">+65 6100-3337</a>
               </li>
               <li class="flex items-center space-x-2">
                 <svg
@@ -141,8 +141,8 @@
               <p class="px-1">Copyright © 2021</p>
               <p class="px-1">Normanton Park</p>
               <p class="px-1">Kingsford Huray Development.</p>
-              <p class="px-1"><a href="+6561003337">+65 6100 3337</a></p>
-              <a href="/privacy-policy" class="px-1">Privacy Policy</a>
+              <p class="px-1"><a href="tel:+6561003337">+65 6100 3337</a></p>
+              <NuxtLink to="/privacy-policy" class="px-1">Privacy Policy</NuxtLink>
             </div>
           </div>
           <div class="text-[10px] text-gray-400">
