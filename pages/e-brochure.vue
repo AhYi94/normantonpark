@@ -10,7 +10,7 @@
         <div class="flex justify-center">
           <NuxtLink to="/public/pdf/normanton-park-e-brochure.pdf" target="_blank"
             ><img
-              src="/_nuxt/img/normanton-park-cover.0158f94.png"
+              src="~assets/img/normanton-park-cover.png"
               alt="Normanton Park e-Brochure"
           /></NuxtLink>
         </div>
