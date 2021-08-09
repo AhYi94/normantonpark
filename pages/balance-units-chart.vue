@@ -20,12 +20,12 @@
           </p>
         </div>
         <div>
-          <iframe
-            src="/public/pdf/normanton-park-balance-units-chart.pdf"
+          <embed
+            :src="`/${url}/public/pdf/normanton-park-balance-units-chart.pdf`"
             type="application/pdf"
             frameborder="0"
             class="w-full h-96"
-          ></iframe>
+          />
         </div>
         <div class="text-center">
           <NuxtLink
@@ -75,3 +75,10 @@
     <BookAppointment />
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return { url: process.env.BASE_URL }
+  },
+}
+</script>

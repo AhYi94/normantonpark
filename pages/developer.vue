@@ -62,7 +62,7 @@
         <div class="grid grid-cols-2 gap-4 sm:gap-6 sm:grid-cols-3">
           <div class="space-y-2 text-center break-words">
             <img
-              src="/_nuxt/img/kingsford-waterbay-1-255x255.5fcb737.jpg"
+              src="~assets/img/kingsford-waterbay-1-255x255.jpg"
               alt="Kingsford Waterbay"
               class="mx-auto rounded shadow"
             />
@@ -70,7 +70,7 @@
           </div>
           <div class="space-y-2 text-center break-words">
             <img
-              src="/_nuxt/img/kingsford-hillview-peak-255x255.197106e.jpg"
+              src="~assets/img/kingsford-hillview-peak-255x255.jpg"
               alt="Kingsford Hillview Peak"
               class="mx-auto rounded shadow"
             />
@@ -80,7 +80,7 @@
           </div>
           <div class="space-y-2 text-center break-words">
             <img
-              src="/_nuxt/img/kingsford-international-255x255.c09b4ad.jpg"
+              src="~assets/img/kingsford-international-255x255.jpg"
               alt="Kingsford International @ China"
               class="mx-auto rounded shadow"
             />
