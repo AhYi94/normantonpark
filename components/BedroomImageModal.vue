@@ -1,12 +1,13 @@
 <template>
-  <div class="grid grid-cols-1 gap-2 sm:grid-cols-3 sm:gap-6">
+  <div class="grid grid-cols-2 gap-2 sm:gap-6 sm:grid-cols-3">
     <div
-      v-for="(image, index) in imagesProp"
+      v-for="(bedRoom, index) in bedRooms"
       :key="index"
       class="space-y-1 cursor-pointer"
-      @click="toggleModal(image.url)"
+      @click="toggleModal(bedRoom.url)"
     >
-      <img :src="imageSource(image.url)" alt="" class="object-cover w-full h-full mx-auto rounded cursor-pointer" />
+      <img :src="imageSource(bedRoom.url)" alt="" class="mx-auto rounded  w-2/3" />
+      <p class="text-center">{{ bedRoom.title }}</p>
     </div>
 
     <div
@@ -61,13 +62,14 @@ export default {
     clickOutside: vClickOutside.directive,
   },
   props: {
-    imagesProp: { type: Array, default: () => [] },
+    image: { type: String, default: '' },
+    bedRoomProp: { type: Array, default: () => [] },
   },
 
   data() {
     return {
       showModal: false,
-      images: this.imagesProp,
+      bedRooms: this.bedRoomProp,
       imageUrl: '',
     }
   },

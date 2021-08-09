@@ -7,56 +7,7 @@
     </div>
     <section>
       <div class="max-w-6xl px-4 py-12 mx-auto space-y-6">
-        <div class="grid grid-cols-1 gap-2 sm:grid-cols-3 sm:gap-6">
-          <img
-            src="/_nuxt/img/Normanton-Park-50m-Pool-1024x502.d50107f.jpg"
-            alt=""
-            class="object-cover w-full h-full mx-auto rounded cursor-pointer"
-          /><img
-            src="/_nuxt/img/Normanton-Park-Commercial-1024x563.bfb906d.jpg"
-            alt=""
-            class="object-cover w-full h-full mx-auto rounded cursor-pointer"
-          /><img
-            src="/_nuxt/img/Normanton-Park-Facilities-1024x717.75a3a05.jpg"
-            alt=""
-            class="object-cover w-full h-full mx-auto rounded cursor-pointer"
-          /><img
-            src="/_nuxt/img/Normanton-Park-Grand-Lobby-1024x512.95aef3d.jpg"
-            alt=""
-            class="object-cover w-full h-full mx-auto rounded cursor-pointer"
-          /><img
-            src="/_nuxt/img/Normanton-Park-HERO-1-1024x768.65cc162.jpg"
-            alt=""
-            class="object-cover w-full h-full mx-auto rounded cursor-pointer"
-          /><img
-            src="/_nuxt/img/Normanton-Park-Landscape-1024x614.7fd5c32.jpg"
-            alt=""
-            class="object-cover w-full h-full mx-auto rounded cursor-pointer"
-          /><img
-            src="/_nuxt/img/Normanton-Park-LanternTrail-1024x614.6e49473.jpg"
-            alt=""
-            class="object-cover w-full h-full mx-auto rounded cursor-pointer"
-          /><img
-            src="/_nuxt/img/Normanton-Park-Overall_HERO-2-1024x716.7f62961.jpg"
-            alt=""
-            class="object-cover w-full h-full mx-auto rounded cursor-pointer"
-          /><img
-            src="/_nuxt/img/Normanton-Park-Panoramic-HERO-1024x293.05328c5.jpg"
-            alt=""
-            class="object-cover w-full h-full mx-auto rounded cursor-pointer"
-          /><img
-            src="/_nuxt/img/Normanton-Park-Strata-1-1024x560.1dd89bf.jpg"
-            alt=""
-            class="object-cover w-full h-full mx-auto rounded cursor-pointer"
-          /><img
-            src="/_nuxt/img/Normanton-Park-Strata-2-1024x563.af1f211.jpg"
-            alt=""
-            class="object-cover w-full h-full mx-auto rounded cursor-pointer"
-          /><img
-            src="/_nuxt/img/Normanton-Park-Unit-Views-1024x563.4114f6c.jpg"
-            alt=""
-            class="object-cover w-full h-full mx-auto rounded cursor-pointer"
-          />
+          <ImageModal :images-prop="imageUrl" />
         </div>
         <section class="py-6">
           <NuxtLink
@@ -92,7 +43,6 @@
               ></path></svg
           ></NuxtLink>
         </section>
-      </div>
     </section>
     <BookAppointment />
     <div class="fixed inset-0 z-20 overflow-y-auto" style="display: none">
@@ -149,3 +99,25 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      imageUrl: [
+        { url: 'Normanton-Park-50m-Pool-1024x502.jpg' },
+        { url: 'Normanton-Park-Commercial-1024x563.jpg' },
+        { url: 'Normanton-Park-Facilities-1024x717.jpg' },
+        { url: 'Normanton-Park-Grand-Lobby-1024x512.jpg' },
+        { url: 'Normanton-Park-HERO-1-1024x768.jpg' },
+        { url: 'Normanton-Park-Landscape-1024x614.jpg' },
+        { url: 'Normanton-Park-LanternTrail-1024x614.jpg' },
+        { url: 'Normanton-Park-Overall_HERO-2-1024x716.jpg' },
+        { url: 'Normanton-Park-Panoramic-HERO-1024x293.jpg' },
+        { url: 'Normanton-Park-Strata-1-1024x560.jpg' },
+        { url: 'Normanton-Park-Strata-2-1024x563.jpg' },
+        { url: 'Normanton-Park-Unit-Views-1024x563.jpg' },
+      ],
+    }
+  },
+}
+</script>

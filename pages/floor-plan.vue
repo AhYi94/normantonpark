@@ -11,35 +11,35 @@
           <h3 class="text-xl font-semib old sm:text-2xl text-center">
             1 Bedroom
           </h3>
-          <ImageModal :bed-room-prop="OneBedroom" />
+          <BedroomImageModal :bed-room-prop="OneBedroom" />
         </div>
         <div class="space-y-4">
           <h3 class="text-xl font-semibold sm:text-2xl text-center">
             2 Bedroom
           </h3>
-          <ImageModal :bed-room-prop="TwoBedroom" />
+          <BedroomImageModal :bed-room-prop="TwoBedroom" />
         </div>
         <div class="space-y-4">
           <h3 class="text-xl font-semibold sm:text-2xl text-center">
             3 Bedroom
           </h3>
-          <ImageModal :bed-room-prop="ThreeBedroom" />
+          <BedroomImageModal :bed-room-prop="ThreeBedroom" />
         </div>
         <div class="space-y-4">
           <h3 class="text-xl font-semibold sm:text-2xl text-center">
             4 Bedroom
           </h3>
-          <ImageModal :bed-room-prop="FourBedroom" />
+          <BedroomImageModal :bed-room-prop="FourBedroom" />
         </div>
         <div class="space-y-4">
           <h3 class="text-xl font-semibold sm:text-2xl text-center">
             5 Bedroom
           </h3>
-          <ImageModal :bed-room-prop="FiveBedroom" />
+          <BedroomImageModal :bed-room-prop="FiveBedroom" />
         </div>
         <div class="space-y-4">
           <h3 class="text-xl font-semibold sm:text-2xl text-center">Terrace</h3>
-          <ImageModal :bed-room-prop="Terrance" />
+          <BedroomImageModal :bed-room-prop="Terrance" />
         </div>
         <section class="py-6">
           <NuxtLink
