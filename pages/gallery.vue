@@ -45,58 +45,6 @@
         </section>
     </section>
     <BookAppointment />
-    <div class="fixed inset-0 z-20 overflow-y-auto" style="display: none">
-      <div
-        class="
-          flex
-          items-end
-          justify-center
-          min-h-screen
-          px-4
-          pt-4
-          pb-20
-          text-center
-          sm:block sm:p-0
-        "
-      >
-        <div aria-hidden="true" class="fixed inset-0 transition-opacity">
-          <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
-        </div>
-        <span
-          aria-hidden="true"
-          class="hidden sm:inline-block sm:align-middle sm:h-screen"
-          >&ZeroWidthSpace;</span
-        >
-        <div
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="modal-headline"
-          class="
-            inline-block
-            overflow-hidden
-            text-left
-            align-bottom
-            transition-all
-            transform
-            bg-white
-            rounded-lg
-            shadow-xl
-            sm:my-8 sm:align-middle sm:max-w-xl sm:w-full
-          "
-          style="display: none"
-        >
-          <div class="p-4 bg-white sm:p-6">
-            <div class="space-y-2 text-center">
-              <img
-                src="/_nuxt/img/Normanton-Park-Commercial-1024x563.bfb906d.jpg"
-                alt=""
-                class="mx-auto"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 <script>
