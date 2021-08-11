@@ -8,12 +8,12 @@
     <section>
       <div class="max-w-6xl px-4 py-12 mx-auto space-y-6">
         <img
-          src="/_nuxt/img/Normanton-Park-Queenstown-Draft-Masterplan-pg-1-scaled.b86f7b2.jpg"
+          src="~assets/img/Normanton-Park-Queenstown-Draft-Masterplan-pg-1-scaled.jpg"
           alt="Queenstown URA Masterplan"
           class="mx-auto"
         />
         <img
-          src="/_nuxt/img/Normanton-Park-Queenstown-Draft-Masterplan-pg-2-scaled.10468eb.jpg"
+          src="~assets/img/Normanton-Park-Queenstown-Draft-Masterplan-pg-2-scaled.jpg"
           alt="Queenstown URA Masterplan"
           class="mx-auto"
         />

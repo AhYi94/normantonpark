@@ -8,12 +8,12 @@
     <section>
       <div class="max-w-6xl px-4 py-12 mx-auto space-y-6">
         <img
-          src="/_nuxt/img/Normaton-Park-Bukit-Merah-Draft-Masterplan-2019-Page-1.e34ce2c.jpg"
+          src="~assets/img/Normaton-Park-Bukit-Merah-Draft-Masterplan-2019-Page-1.jpg"
           alt="Bukit Merah URA Masterplan"
           class="mx-auto"
         />
         <img
-          src="/_nuxt/img/Normaton-Park-Bukit-Merah-Draft-Masterplan-2019-Page-2.80998fa.jpg"
+        src="~assets/img/Normaton-Park-Bukit-Merah-Draft-Masterplan-2019-Page-2.jpg"
           alt="Bukit Merah URA Masterplan"
           class="mx-auto"
         />
