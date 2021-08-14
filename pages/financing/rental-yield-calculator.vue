@@ -24,6 +24,7 @@
                   <div>Property Price ($)</div>
                   <div>
                     <input
+                      v-model="propertyPrice"
                       type="text"
                       class="
                         block
@@ -45,6 +46,7 @@
                   <div>Estimated Monthly Rental ($)</div>
                   <div>
                     <input
+                      v-model="monthlyRental"
                       type="text"
                       class="
                         block
@@ -108,6 +110,7 @@
                       <div>Gross Rental Yield</div>
                       <div>
                         <input
+                          v-model="grossResult"
                           type="text"
                           readonly="readonly"
                           class="
@@ -183,3 +186,34 @@
     <BookAppointment />
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      propertyPrice: null,
+      monthlyRental: null,
+      grossResult: null,
+    }
+  },
+  watch: {
+    monthlyRental() {
+      this.grossResult = 0
+      if (this.propertyPrice != null && this.monthlyRental != null) {
+        this.grossResult = this.getGrossResult(
+          this.propertyPrice,
+          this.monthlyRental
+        )
+      }
+    },
+  },
+  methods: {
+    getGrossResult: (propertyPrice, monthlyRental) => {
+      const propertyValue = parseFloat(propertyPrice)
+      const rent = parseFloat(monthlyRental) * 12
+      const gross = String(((rent / propertyValue) * 100).toFixed(2)) + "%"
+      return gross
+    },
+  },
+}
+</script>
