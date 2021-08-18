@@ -59,7 +59,8 @@
                         <div>Age*</div>
                         <div>
                           <input
-                            type="text"
+                            v-model="age"
+                            type="number"
                             class="
                               block
                               w-full
@@ -80,7 +81,8 @@
                         <div>Monthly Fixed Income*</div>
                         <div>
                           <input
-                            type="text"
+                            v-model="income"
+                            type="number"
                             class="
                               block
                               w-full
@@ -134,7 +136,8 @@
                         <div>Age*</div>
                         <div>
                           <input
-                            type="text"
+                            v-model="age1"
+                            type="number"
                             class="
                               block
                               w-full
@@ -155,7 +158,8 @@
                         <div>Monthly Fixed Income*</div>
                         <div>
                           <input
-                            type="text"
+                            v-model="income1"
+                            type="number"
                             class="
                               block
                               w-full
@@ -207,7 +211,8 @@
                       <div>Car Loan</div>
                       <div>
                         <input
-                          type="text"
+                          v-model="carLoan"
+                          type="number"
                           class="
                             block
                             w-full
@@ -228,7 +233,8 @@
                       <div>Credit Cards</div>
                       <div>
                         <input
-                          type="text"
+                          v-model="creditCard"
+                          type="number"
                           class="
                             block
                             w-full
@@ -297,6 +303,7 @@
                       <div>60% TDSR Limit</div>
                       <div>
                         <input
+                          v-model="TDSR"
                           type="text"
                           readonly="readonly"
                           class="
@@ -319,6 +326,7 @@
                       <div>Max Loan Tenure (Years)</div>
                       <div>
                         <input
+                          v-model="maxLoanTenure"
                           type="text"
                           readonly="readonly"
                           class="
@@ -341,6 +349,7 @@
                       <div>Maximum Loan Amount*</div>
                       <div>
                         <input
+                          v-model="maxLoanAmount"
                           type="text"
                           readonly="readonly"
                           class="
@@ -363,6 +372,7 @@
                       <div>Maximum Property Value#</div>
                       <div>
                         <input
+                          v-model="maxPropertyValue"
                           type="text"
                           readonly="readonly"
                           class="
@@ -458,3 +468,133 @@
     <BookAppointment />
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      age: '',
+      age1: '',
+      income: '',
+      income1: '',
+      carLoan: '',
+      carLoan1: '',
+      creditCard: '',
+      creditCard1: '',
+      averageWeightedAge: '',
+      maxLoanTenure: '',
+      TDSR: '',
+      discountFactor: '',
+      maxLoanAmount: '',
+      maxPropertyValue: '',
+    }
+  },
+  computed: {
+    compoundProperty() {
+      return [
+        this.age,
+        this.age1,
+        this.income,
+        this.income1,
+        this.carLoan,
+        this.carLoan1,
+        this.creditCard,
+        this.creditCard1,
+      ].join()
+    },
+  },
+  watch: {
+    compoundProperty() {
+      const age = !isNaN(this.age) && this.age > 0 ? this.age : 0
+      const age1 = !isNaN(this.age1) && this.age1 > 0 ? this.age1 : 0
+      const income = !isNaN(this.income) && this.income > 0 ? this.income : 0
+      const income1 =
+        !isNaN(this.income1) && this.income1 > 0 ? this.income1 : 0
+      const carLoan =
+        !isNaN(this.carLoan) && this.carLoan > 0 ? this.carLoan : 0
+      const carLoan1 =
+        !isNaN(this.carLoan1) && this.carLoan1 > 0 ? this.carLoan1 : 0
+      const creditCard =
+        !isNaN(this.creditCard) && this.creditCard > 0 ? this.creditCard : 0
+      const creditCard1 =
+        !isNaN(this.creditCard1) && this.creditCard1 > 0 ? this.creditCard1 : 0
+
+      this.averageWeightedAge = this.calAverageWeightedAge(
+        age,
+        income,
+        age1,
+        income1
+      )
+
+      this.TDSR = this.calTDSR(
+        income,
+        income1,
+        carLoan,
+        carLoan1,
+        creditCard,
+        creditCard1
+      )
+
+      this.discountFactor = this.calDiscountFactor()
+      this.maxLoanAmount = this.calMaxLoanAmount(
+        this.TDSR,
+        this.discountFactor
+      ).toFixed(2)
+      this.maxPropertyValue = this.calMaxPropertyValue().toFixed(2)
+    },
+  },
+  methods: {
+    calAverageWeightedAge: (age, income, age1, income1) => {
+      const application = parseFloat(age) * parseFloat(income)
+      const application2 = parseFloat(age1) * parseFloat(income1)
+      const sumIncome = parseFloat(income) + parseFloat(income1)
+      const average = (application + application2) / sumIncome
+      return average
+    },
+    calInterestRate() {
+      return 3.5 / 1200
+    },
+    calMaxLoanTenure() {
+      let maxLoanTenure = 65 - this.averageWeightedAge
+      if (maxLoanTenure > 30) {
+        maxLoanTenure = 30
+      }
+      this.maxLoanTenure = maxLoanTenure
+    },
+
+    calTotalRepaymentPeriod() {
+      return this.maxLoanTenure * 12
+    },
+
+    calTDSR(income, income1, carLoan, carLoan1, creditCard, creditCard1) {
+      const totalIncomePercentage =
+        (parseFloat(income) + parseFloat(income1)) * 0.6
+      const monthlyDebtObligations =
+        parseFloat(carLoan) +
+        parseFloat(creditCard) +
+        parseFloat(carLoan1) +
+        parseFloat(creditCard1)
+
+      return totalIncomePercentage - monthlyDebtObligations
+    },
+    calDiscountFactor() {
+      const interestRate = this.calInterestRate()
+      this.calMaxLoanTenure()
+      const discountFactor =
+        (Math.pow(1 + interestRate, this.maxLoanTenure) - 1) /
+        (interestRate * Math.pow(1 + interestRate, this.maxLoanTenure))
+      return discountFactor
+    },
+
+    calMaxLoanAmount(TDSR, discountFactor) {
+      console.log('TDSR: ' + TDSR)
+      console.log('Discount Factor: ' + discountFactor)
+      return TDSR * discountFactor
+    },
+
+    calMaxPropertyValue() {
+      return this.maxLoanAmount / 0.75
+    },
+  },
+}
+</script>
