@@ -482,7 +482,7 @@ export default {
       creditCard: '',
       creditCard1: '',
       averageWeightedAge: '',
-      maxLoanTenure: '',
+      maxLoanTenure: 0,
       TDSR: '',
       discountFactor: '',
       maxLoanAmount: '',
@@ -505,42 +505,61 @@ export default {
   },
   watch: {
     compoundProperty() {
-      const age = !isNaN(this.age) && this.age > 0 ? this.age : 0
-      const age1 = !isNaN(this.age1) && this.age1 > 0 ? this.age1 : 0
-      const income = !isNaN(this.income) && this.income > 0 ? this.income : 0
-      const income1 =
-        !isNaN(this.income1) && this.income1 > 0 ? this.income1 : 0
-      const carLoan =
-        !isNaN(this.carLoan) && this.carLoan > 0 ? this.carLoan : 0
-      const carLoan1 =
-        !isNaN(this.carLoan1) && this.carLoan1 > 0 ? this.carLoan1 : 0
-      const creditCard =
-        !isNaN(this.creditCard) && this.creditCard > 0 ? this.creditCard : 0
-      const creditCard1 =
-        !isNaN(this.creditCard1) && this.creditCard1 > 0 ? this.creditCard1 : 0
+      if (
+        (this.age > 0 && this.income > 0) ||
+        (this.age1 > 0 && this.income1 > 0)
+      ) {
+        const age = !isNaN(this.age) && this.age > 0 ? this.age : 0
+        const age1 = !isNaN(this.age1) && this.age1 > 0 ? this.age1 : 0
+        const income = !isNaN(this.income) && this.income > 0 ? this.income : 0
+        const income1 =
+          !isNaN(this.income1) && this.income1 > 0 ? this.income1 : 0
+        const carLoan =
+          !isNaN(this.carLoan) && this.carLoan > 0 ? this.carLoan : 0
+        const carLoan1 =
+          !isNaN(this.carLoan1) && this.carLoan1 > 0 ? this.carLoan1 : 0
+        const creditCard =
+          !isNaN(this.creditCard) && this.creditCard > 0 ? this.creditCard : 0
+        const creditCard1 =
+          !isNaN(this.creditCard1) && this.creditCard1 > 0
+            ? this.creditCard1
+            : 0
 
-      this.averageWeightedAge = this.calAverageWeightedAge(
-        age,
-        income,
-        age1,
-        income1
-      )
+        this.averageWeightedAge = this.calAverageWeightedAge(
+          age,
+          income,
+          age1,
+          income1
+        )
 
-      this.TDSR = this.calTDSR(
-        income,
-        income1,
-        carLoan,
-        carLoan1,
-        creditCard,
-        creditCard1
-      )
+        this.TDSR = this.calTDSR(
+          income,
+          income1,
+          carLoan,
+          carLoan1,
+          creditCard,
+          creditCard1
+        )
 
-      this.discountFactor = this.calDiscountFactor()
-      this.maxLoanAmount = this.calMaxLoanAmount(
-        this.TDSR,
-        this.discountFactor
-      ).toFixed(2)
-      this.maxPropertyValue = this.calMaxPropertyValue().toFixed(2)
+        this.discountFactor = this.calDiscountFactor()
+        const maxLoanAmount = this.calMaxLoanAmount(
+          this.TDSR,
+          this.discountFactor
+        ).toFixed(2)
+        this.maxLoanAmount = parseFloat(maxLoanAmount).toLocaleString('en-US', {
+          style: 'currency',
+          currency: 'USD',
+          maximumFractionDigits: 2,
+        })
+
+        this.maxPropertyValue = this.calMaxPropertyValue(
+          maxLoanAmount
+        ).toLocaleString('en-US', {
+          style: 'currency',
+          currency: 'USD',
+          maximumFractionDigits: 2,
+        })
+      }
     },
   },
   methods: {
@@ -580,20 +599,23 @@ export default {
     calDiscountFactor() {
       const interestRate = this.calInterestRate()
       this.calMaxLoanTenure()
+      const totalRepaymentPeriod = this.calTotalRepaymentPeriod()
+      const powerOfMaxLoanTenure = Math.pow(
+        1 + interestRate,
+        totalRepaymentPeriod
+      )
+
       const discountFactor =
-        (Math.pow(1 + interestRate, this.maxLoanTenure) - 1) /
-        (interestRate * Math.pow(1 + interestRate, this.maxLoanTenure))
+        (powerOfMaxLoanTenure - 1) / (interestRate * powerOfMaxLoanTenure)
       return discountFactor
     },
 
     calMaxLoanAmount(TDSR, discountFactor) {
-      console.log('TDSR: ' + TDSR)
-      console.log('Discount Factor: ' + discountFactor)
       return TDSR * discountFactor
     },
 
-    calMaxPropertyValue() {
-      return this.maxLoanAmount / 0.75
+    calMaxPropertyValue(maxLoanAmount) {
+      return maxLoanAmount / 0.75
     },
   },
 }
