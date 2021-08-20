@@ -482,7 +482,7 @@ export default {
       creditCard: '',
       creditCard1: '',
       averageWeightedAge: '',
-      maxLoanTenure: 0,
+      maxLoanTenure: '',
       TDSR: '',
       discountFactor: '',
       maxLoanAmount: '',
@@ -532,7 +532,7 @@ export default {
           income1
         )
 
-        this.TDSR = this.calTDSR(
+        const TDSR = this.calTDSR(
           income,
           income1,
           carLoan,
@@ -541,9 +541,15 @@ export default {
           creditCard1
         )
 
+        this.TDSR = TDSR.toLocaleString('en-US', {
+          style: 'currency',
+          currency: 'USD',
+          maximumFractionDigits: 0,
+        })
+
         this.discountFactor = this.calDiscountFactor()
         const maxLoanAmount = this.calMaxLoanAmount(
-          this.TDSR,
+          TDSR,
           this.discountFactor
         ).toFixed(2)
         this.maxLoanAmount = parseFloat(maxLoanAmount).toLocaleString('en-US', {
@@ -620,3 +626,5 @@ export default {
   },
 }
 </script>
+
+<style scoped></style>
