@@ -266,6 +266,7 @@
                   rounded
                   hover:bg-gray-900
                 "
+                @click="reset"
               >
                 Reset
               </button>
@@ -569,6 +570,17 @@ export default {
     },
   },
   methods: {
+    reset() {
+      this.age = ''
+      this.age1 = ''
+      this.income = ''
+      this.income1 = ''
+      this.carLoan = ''
+      this.carLoan1 = ''
+      this.creditCard = ''
+      this.creditCard1 = ''
+    },
+
     calAverageWeightedAge: (age, income, age1, income1) => {
       const application = parseFloat(age) * parseFloat(income)
       const application2 = parseFloat(age1) * parseFloat(income1)

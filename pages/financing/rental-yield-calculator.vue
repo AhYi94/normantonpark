@@ -74,6 +74,7 @@
                     rounded
                     hover:bg-gray-900
                   "
+                  @click="reset"
                 >
                   Reset
                 </button>
@@ -198,7 +199,7 @@ export default {
   },
   watch: {
     monthlyRental() {
-      this.grossResult = 0
+      this.grossResult = null
       if (this.propertyPrice != null && this.monthlyRental != null) {
         this.grossResult = this.getGrossResult(
           this.propertyPrice,
@@ -208,10 +209,14 @@ export default {
     },
   },
   methods: {
+    reset() {
+      this.propertyPrice = null
+      this.monthlyRental = null
+    },
     getGrossResult: (propertyPrice, monthlyRental) => {
       const propertyValue = parseFloat(propertyPrice)
       const rent = parseFloat(monthlyRental) * 12
-      const gross = String(((rent / propertyValue) * 100).toFixed(2)) + "%"
+      const gross = String(((rent / propertyValue) * 100).toFixed(2)) + '%'
       return gross
     },
   },
