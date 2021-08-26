@@ -7,15 +7,22 @@
     </div>
     <section>
       <div class="max-w-6xl px-4 py-12 mx-auto space-y-6">
-        <div class="max-w-xl mx-auto">
-          <div class="aspect-w-16 aspect-h-9">
-            <iframe
-              src="https://www.youtube.com/embed/y6xz58yCqGk"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen="allowfullscreen"
-            ></iframe>
-          </div>
+        <div>
+          <embed
+            :src="`/${url}/public/pdf/greater-southern-waterfront-ura-masterplan.pdf`"
+            type="application/pdf"
+            frameborder="0"
+            class="w-full h-96"
+          />
+        </div>
+        <div class="text-center">
+          <NuxtLink
+            to="/public/pdf/greater-southern-waterfront-ura-masterplan.pdf"
+            target="_blank"
+            class="font-medium hover:underline"
+          >
+            Click here to view larger chart
+          </NuxtLink>
         </div>
         <section class="py-6">
           <NuxtLink
@@ -35,7 +42,7 @@
               bg-theme-700
             "
           >
-            Continue To Greater Southern Waterfront URA Masterplan
+            Continue To Queenstown URA Masterplan
             <svg
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -56,3 +63,10 @@
     <BookAppointment />
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return { url: process.env.BASE_URL }
+  },
+}
+</script>
