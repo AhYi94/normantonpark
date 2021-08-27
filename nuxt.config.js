@@ -16,7 +16,14 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [{ src: 'https://smtpjs.com/v3/smtp.js' }],
+    script: [
+      { src: 'https://smtpjs.com/v3/smtp.js' },
+      {
+        src: 'https://code.jquery.com/jquery-3.6.0.min.js',
+        integrity: 'sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=',
+        crossorigin: 'anonymous',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -38,7 +45,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['nuxt-flatpickr'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

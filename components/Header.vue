@@ -15,7 +15,7 @@
             fill="#cfb585"
           ></path></svg
       ></NuxtLink>
-      <button>
+      <button @click.prevent="menuClick()">
         <svg
           fill="currentColor"
           viewBox="0 0 24 24"
@@ -27,18 +27,20 @@
         </svg>
       </button>
     </div>
-    <div class="fixed inset-0 z-20 overflow-hidden" style="display: none">
+    <div
+      class="fixed inset-0 z-20 overflow-hidden"
+      :style="menuIsActive ? 'display: block' : 'display: none'"
+    >
       <div class="absolute inset-0 z-10 overflow-hidden">
         <div
           aria-hidden="true"
           class="absolute inset-0 transition-opacity bg-gray-500 bg-opacity-75"
-          style="display: none"
         ></div>
         <section
           aria-labelledby="slide-over-heading"
           class="absolute inset-y-0 right-0 flex max-w-full pl-10"
         >
-          <div class="relative w-screen max-w-md" style="display: none">
+          <div class="relative w-screen max-w-md">
             <div
               class="
                 absolute
@@ -50,7 +52,6 @@
                 -ml-8
                 sm:-ml-10 sm:pr-4
               "
-              style="display: none"
             >
               <button
                 class="
@@ -59,6 +60,7 @@
                   hover:text-white
                   focus:outline-none focus:ring-2 focus:ring-white
                 "
+                @click.prevent="menuClick()"
               >
                 <span class="sr-only">Close panel</span>
                 <svg
@@ -153,7 +155,7 @@
                       </NuxtLink>
                     </div>
                     <div>
-                      <div class="cursor-pointer">
+                      <div class="cursor-pointer" @click.prevent="npMenuClick">
                         <div
                           class="
                             flex
@@ -181,7 +183,11 @@
                         </div>
                         <ul
                           class="py-2 space-y-2 text-gray-600"
-                          style="display: none"
+                          :style="
+                            normantonParkSubmenu
+                              ? 'display: block'
+                              : 'display: none'
+                          "
                         >
                           <li
                             class="
@@ -205,7 +211,9 @@
                               mobile-sub-menu
                             "
                           >
-                            <NuxtLink to="/location-map" class="inline-block w-full"
+                            <NuxtLink
+                              to="/location-map"
+                              class="inline-block w-full"
                               >Location Map</NuxtLink
                             >
                           </li>
@@ -217,7 +225,9 @@
                               mobile-sub-menu
                             "
                           >
-                            <NuxtLink to="/site-plan" class="inline-block w-full"
+                            <NuxtLink
+                              to="/site-plan"
+                              class="inline-block w-full"
                               >Site Plan</NuxtLink
                             >
                           </li>
@@ -229,7 +239,9 @@
                               mobile-sub-menu
                             "
                           >
-                            <NuxtLink to="/floor-plan" class="inline-block w-full"
+                            <NuxtLink
+                              to="/floor-plan"
+                              class="inline-block w-full"
                               >Floor Plan</NuxtLink
                             >
                           </li>
@@ -265,7 +277,9 @@
                               mobile-sub-menu
                             "
                           >
-                            <NuxtLink to="/e-brochure" class="inline-block w-full"
+                            <NuxtLink
+                              to="/e-brochure"
+                              class="inline-block w-full"
                               >e-Brochure</NuxtLink
                             >
                           </li>
@@ -288,7 +302,10 @@
                       </div>
                     </div>
                     <div>
-                      <div class="cursor-pointer">
+                      <div
+                        class="cursor-pointer"
+                        @click.prevent="kentMenuClick"
+                      >
                         <div
                           class="
                             flex
@@ -316,7 +333,9 @@
                         </div>
                         <ul
                           class="py-2 space-y-2 text-gray-600"
-                          style="display: none"
+                          :style="
+                            kentSubmenu ? 'display: block' : 'display: none'
+                          "
                         >
                           <li
                             class="
@@ -367,7 +386,7 @@
                       </div>
                     </div>
                     <div>
-                      <div class="cursor-pointer">
+                      <div class="cursor-pointer" @click="financingMenuClick">
                         <div
                           class="
                             flex
@@ -395,7 +414,11 @@
                         </div>
                         <ul
                           class="py-2 space-y-2 text-gray-600"
-                          style="display: none"
+                          :style="
+                            financingSubmenu
+                              ? 'display: block'
+                              : 'display: none'
+                          "
                         >
                           <li
                             class="
@@ -544,7 +567,33 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      menuIsActive: false,
+      normantonParkSubmenu: false,
+      kentSubmenu: false,
+      financingSubmenu: false,
+    }
+  },
+  watch: {
+    $route() {
+      this.menuIsActive = !this.menuIsActive
+    },
+  },
+  methods: {
+    menuClick() {
+      this.menuIsActive = !this.menuIsActive
+    },
+    npMenuClick() {
+      this.normantonParkSubmenu = !this.normantonParkSubmenu
+    },
+    kentMenuClick() {
+      this.kentSubmenu = !this.kentSubmenu
+    },
+    financingMenuClick() {
+      this.financingSubmenu = !this.financingSubmenu
+    },
+  },
+}
 </script>
-
-<style></style>
