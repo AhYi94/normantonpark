@@ -578,7 +578,7 @@ export default {
   },
   watch: {
     $route() {
-      this.menuIsActive = !this.menuIsActive
+      this.menuIsActive = false
     },
   },
   methods: {
