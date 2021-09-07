@@ -17,7 +17,7 @@
             />
           </div>
         </div>
-        <div class="mx-auto prose">
+        <div class="max-w-6xl px-4 mx-auto prose">
           <p>
             Normanton Park is formerly known as 488-unit HUDC (Normanton Park),
             proudly developed by Kingsford Hurray Development. Kingsford
@@ -62,7 +62,7 @@
         <div class="grid grid-cols-2 gap-4 sm:gap-6 sm:grid-cols-3">
           <div class="space-y-2 text-center break-words">
             <img
-              src="~assets/img/kingsford-waterbay-1-255x255.jpg"
+              src="~assets/img/developer/track-record-1.jpg"
               alt="Kingsford Waterbay"
               class="mx-auto rounded shadow"
             />
@@ -70,7 +70,7 @@
           </div>
           <div class="space-y-2 text-center break-words">
             <img
-              src="~assets/img/kingsford-hillview-peak-255x255.jpg"
+              src="~assets/img/developer/track-record-2.jpg"
               alt="Kingsford Hillview Peak"
               class="mx-auto rounded shadow"
             />
@@ -80,12 +80,42 @@
           </div>
           <div class="space-y-2 text-center break-words">
             <img
-              src="~assets/img/kingsford-international-255x255.jpg"
-              alt="Kingsford International @ China"
+              src="~assets/img/developer/track-record-3.jpg"
+              alt="Kingsford Yu Jing Ting"
               class="mx-auto rounded shadow"
             />
             <p class="text-sm font-semibold sm:text-lg">
-              Kingsford International @ China
+              Kingsford Yu Jing Ting
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 sm:gap-6 sm:grid-cols-3">
+          <div class="space-y-2 text-center break-words">
+            <img
+              src="~assets/img/developer/track-record-4.jpg"
+              alt="Xi Fu Qu"
+              class="mx-auto rounded shadow"
+            />
+            <p class="text-sm font-semibold sm:text-lg">Xi Fu Qu</p>
+          </div>
+          <div class="space-y-2 text-center break-words">
+            <img
+              src="~assets/img/developer/track-record-5.jpg"
+              alt="Kingsford Yong Jing Hao Cheng"
+              class="mx-auto rounded shadow"
+            />
+            <p class="text-sm font-semibold sm:text-lg">
+              Kingsford Yong Jing Hao Cheng
+            </p>
+          </div>
+          <div class="space-y-2 text-center break-words">
+            <img
+              src="~assets/img/developer/track-record-6.jpg"
+              alt="Kingsford Li Cheng"
+              class="mx-auto rounded shadow"
+            />
+            <p class="text-sm font-semibold sm:text-lg">
+              Kingsford Li Cheng
             </p>
           </div>
         </div>

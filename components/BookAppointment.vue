@@ -6,7 +6,7 @@
         <div class="flex flex-wrap">
           <div class="p-4 prose bg-gray-200 sm:order-2 md:w-1/2">
             <img
-              src="~assets/img/book-an-appointment.png"
+              src="~assets/img/book-an-appointment.jpg"
               alt="Book An Appointment"
               class="w-full"
             />

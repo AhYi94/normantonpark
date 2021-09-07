@@ -274,7 +274,7 @@
           </li>
           <li class="menu-item group hover:bg-theme-700">
             <NuxtLink
-              to="/#"
+              :to="$nuxt.$route.path + '#'"
               class="
                 inline-block
                 px-2

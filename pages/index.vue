@@ -85,7 +85,7 @@
               "
             >
               <img
-                src="~/assets/img/Normanton-Park-Pool-v3-scaled-348x200.jpg"
+                src="~/assets/img/home/kingsford-logo.png"
                 alt="Normanton Park"
                 class="mx-auto rounded"
               />
@@ -144,7 +144,7 @@
               "
             >
               <img
-                src="~/assets/img/Normanton-Park-Location-348x200.jpg"
+                src="~/assets/img/home/home-showflat-location-singapore.jpg"
                 alt="Normanton Park Location Map"
                 class="mx-auto rounded"
               />
@@ -204,7 +204,7 @@
               "
             >
               <img
-                src="~/assets/img/direct-developer-sales.png"
+                src="~/assets/img/home/home-direct-developer-sales.png"
                 alt="Normanton Park Showflat"
                 class="mx-auto rounded"
               />
@@ -257,7 +257,7 @@
       </section>
       <section>
         <div class="py-12 bg-black">
-          <div class="max-w-6xl px-4 mx-auto">
+          <div class="max-w-6xl px-4 mx-auto flex">
             <div
               class="
                 flex flex-wrap
@@ -290,6 +290,15 @@
                 Book an Appointment
               </NuxtLink>
             </div>
+            <iframe
+              width="357"
+              height="208"
+              src="https://www.youtube.com/embed/4ZAgwh7jOxU?list=PL3IXagMCUhAN1kH0uhHYNFWjE7Og9mupM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </section>
@@ -365,22 +374,22 @@
           </div>
           <div class="grid grid-cols-2 gap-2 lg:gap-6 lg:grid-cols-4">
             <img
-              src="~assets/img/home-artist-impression-thumb-1.jpg"
+              src="~assets/img/home/home-artist-impression-thumb-1.jpg"
               alt=""
               class="object-cover w-full h-auto rounded"
             />
             <img
-              src="~assets/img/home-artist-impression-thumb-2.jpg"
+              src="~assets/img/home/home-artist-impression-thumb-2.jpg"
               alt=""
               class="object-cover w-full h-auto rounded"
             />
             <img
-              src="~assets/img/home-artist-impression-thumb-3.jpg"
+              src="~assets/img/home/home-artist-impression-thumb-3.jpg"
               alt=""
               class="object-cover w-full h-auto rounded"
             />
             <img
-              src="~assets/img/home-artist-impression-thumb-4.jpg"
+              src="~assets/img/home/home-artist-impression-thumb-4.jpg"
               alt=""
               class="object-cover w-full h-auto rounded"
             />
@@ -395,4 +404,3 @@
 <script>
 export default {}
 </script>
-

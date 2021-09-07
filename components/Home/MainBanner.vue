@@ -26,7 +26,7 @@
             ></div>
             <img
               data-v-750ad506=""
-              src="~/assets/img/tablet.png"
+              src="~/assets/img/home/tablet.png"
               alt=""
               class="relative ml-auto max-h-64 sm:max-h-80"
             />
@@ -105,7 +105,7 @@
         <NuxtLink to="/floor-plan" class=""
           ><div class="max-w-sm mx-auto group">
             <img
-              src="~/assets/img/home-floor-plan.jpg"
+              src="~/assets/img/home/home-floor-plan.jpg"
               alt="Floor Plan"
               class="w-full rounded shadow"
             />
@@ -143,7 +143,7 @@
         <NuxtLink to="/book-an-appointment" class=""
           ><div class="max-w-sm mx-auto group">
             <img
-              src="~/assets/img/home-book-appointment.jpg"
+              src="~/assets/img/home/home-book-appointment.jpg"
               alt="Get Direct Discounts"
               class="w-full rounded shadow"
             />
@@ -181,7 +181,7 @@
         <NuxtLink to="/contact-us" class=""
           ><div class="max-w-sm mx-auto group">
             <img
-              src="~/assets/img/home-best-price.jpg"
+              src="~/assets/img/home/home-best-price.jpg"
               alt="Daily Price Updates"
               class="w-full rounded shadow"
             />
@@ -227,6 +227,6 @@ export default {}
 
 <style scope>
 #main_banner {
-  background-image: url('~assets/img/main-banner.png');
+  background-image: url('~assets/img/home/main-banner.jpg');
 }
 </style>
