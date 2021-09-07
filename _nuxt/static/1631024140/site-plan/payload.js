@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/site-plan", {data:[{}],fetch:{},mutations:void 0});

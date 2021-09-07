@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/location-map", {data:[{}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/financing/rental-yield-calculator", {data:[{}],fetch:{},mutations:void 0});

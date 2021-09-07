@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/bukit-merah-ura-masterplan", {data:[{}],fetch:{},mutations:void 0});
