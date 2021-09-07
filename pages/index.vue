@@ -256,49 +256,48 @@
         </div>
       </section>
       <section>
-        <div class="py-12 bg-black">
-          <div class="max-w-6xl px-4 mx-auto flex">
-            <div
-              class="
-                flex flex-wrap
-                items-center
-                justify-between
-                p-6
-                border
-                rounded-md
-                sm:col-span-2
-                border-theme-400
-              "
-            >
-              <h1 class="text-2xl font-medium text-theme-500">
-                Book An Appointment To Get Direct Developer Price
-              </h1>
-              <NuxtLink
-                to="/book-an-appointment"
+        <div class="py-12 bg-brown-700">
+          <div class="max-w-6xl px-4 mx-auto">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
+              <div
                 class="
-                  inline-block
-                  font-medium
-                  text-white
-                  transition
-                  rounded
-                  bg-theme-600
-                  hover:bg-theme-900
-                  px-6
-                  py-3
+                  p-6
+                  space-y-4
+                  border
+                  rounded-md
+                  sm:col-span-2
+                  border-brown-400
                 "
               >
-                Book an Appointment
-              </NuxtLink>
+                <h1 class="text-3xl font-bold text-white">
+                  Book An Appointment To Get Direct Developer Price
+                </h1>
+                <NuxtLink
+                  to="/book-an-appointment"
+                  class="
+                    inline-block
+                    font-medium
+                    text-white
+                    transition
+                    rounded
+                    bg-brown-900
+                    hover:bg-yellow-900
+                    px-6
+                    py-3
+                  "
+                  >Book an Appointment</NuxtLink
+                >
+              </div>
+              <div>
+                <iframe
+                  src="https://www.youtube.com/embed/4ZAgwh7jOxU?list=PL3IXagMCUhAN1kH0uhHYNFWjE7Og9mupM"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen="allowfullscreen"
+                  class="w-full mx-auto rounded-md h-52"
+                ></iframe>
+              </div>
             </div>
-            <iframe
-              width="357"
-              height="208"
-              src="https://www.youtube.com/embed/4ZAgwh7jOxU?list=PL3IXagMCUhAN1kH0uhHYNFWjE7Og9mupM"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
           </div>
         </div>
       </section>
