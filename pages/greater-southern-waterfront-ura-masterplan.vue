@@ -9,7 +9,7 @@
       <div class="max-w-6xl px-4 py-12 mx-auto space-y-6">
         <div>
           <embed
-            :src="`/${url}/public/pdf/greater-southern-waterfront-ura-masterplan.pdf`"
+            :src="`${url}`"
             type="application/pdf"
             frameborder="0"
             class="w-full h-96"
@@ -66,7 +66,7 @@
 <script>
 export default {
   data() {
-    return { url: process.env.BASE_URL }
+     return { url: process.env.BASE_URL ? '/' + process.env.BASE_URL + '/public/pdf/greater-southern-waterfront-ura-masterplan.pdf': '/public/pdf/greater-southern-waterfront-ura-masterplan.pdf'}
   },
 }
 </script>

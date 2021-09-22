@@ -21,7 +21,7 @@
         </div>
         <div>
           <embed
-            :src="`/${url}/public/pdf/normanton-park-balance-units-chart.pdf`"
+            :src="`${url}`"
             type="application/pdf"
             frameborder="0"
             class="w-full h-96"
@@ -78,7 +78,7 @@
 <script>
 export default {
   data() {
-    return { url: process.env.BASE_URL }
+    return { url: process.env.BASE_URL ? '/' + process.env.BASE_URL + '/public/pdf/normanton-park-balance-units-chart.pdf': '/public/pdf/normanton-park-balance-units-chart.pdf'}
   },
 }
 </script>
