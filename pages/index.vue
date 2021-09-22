@@ -258,7 +258,7 @@
       <section>
         <div class="py-12 bg-brown-700">
           <div class="max-w-6xl px-4 mx-auto">
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-1">
               <div
                 class="
                   p-6
@@ -287,15 +287,6 @@
                   "
                   >Book an Appointment</NuxtLink
                 >
-              </div>
-              <div>
-                <iframe
-                  src="https://www.youtube.com/embed/4ZAgwh7jOxU?list=PL3IXagMCUhAN1kH0uhHYNFWjE7Og9mupM"
-                  frameborder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowfullscreen="allowfullscreen"
-                  class="w-full mx-auto rounded-md h-52"
-                ></iframe>
               </div>
             </div>
           </div>
