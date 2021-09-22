@@ -258,36 +258,36 @@
       <section>
         <div class="py-12 bg-brown-700">
           <div class="max-w-6xl px-4 mx-auto">
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-1">
-              <div
+            <div
+              class="
+                flex flex-wrap
+                items-center
+                justify-between
+                p-6
+                border
+                rounded-md
+                sm:col-span-2
+                border-brown-400
+              "
+            >
+              <h1 class="text-3xl font-bold text-white">
+                Book An Appointment To Get Direct Developer Price
+              </h1>
+              <NuxtLink
+                to="/book-an-appointment"
                 class="
-                  p-6
-                  space-y-4
-                  border
-                  rounded-md
-                  sm:col-span-2
-                  border-brown-400
+                  inline-block
+                  font-medium
+                  text-white
+                  transition
+                  rounded
+                  bg-brown-900
+                  hover:bg-yellow-900
+                  px-6
+                  py-3
                 "
+                >Book an Appointment</NuxtLink
               >
-                <h1 class="text-3xl font-bold text-white">
-                  Book An Appointment To Get Direct Developer Price
-                </h1>
-                <NuxtLink
-                  to="/book-an-appointment"
-                  class="
-                    inline-block
-                    font-medium
-                    text-white
-                    transition
-                    rounded
-                    bg-brown-900
-                    hover:bg-yellow-900
-                    px-6
-                    py-3
-                  "
-                  >Book an Appointment</NuxtLink
-                >
-              </div>
             </div>
           </div>
         </div>
