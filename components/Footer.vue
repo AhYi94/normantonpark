@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="bg-theme-50">
-      <div class="max-w-6xl px-4 py-12 mx-auto">
+      <div class="max-w-8xl px-4 py-12 mx-auto">
         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div class="space-y-2">
             <h4 class="text-xl font-medium">Proudly Developed By</h4>
@@ -118,8 +118,8 @@
                     stroke-linejoin="round"
                   ></path>
                 </svg>
-                <a href="mailto:sales@normantonkingsford.sg"
-                  >sales@normantonkingsford.sg</a
+                <a href="mailto:sales@normantonparkcondos.com.sg"
+                  >sales@normantonparkcondos.com.sg</a
                 >
               </li>
             </ul>

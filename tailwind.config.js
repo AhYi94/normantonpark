@@ -29,6 +29,9 @@ module.exports = {
           900: '#543E28',
         },
       },
+      maxWidth: {
+        '8xl': '88rem',
+      },
 
       keyframes: {
         pulse: {
