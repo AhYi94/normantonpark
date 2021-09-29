@@ -321,7 +321,7 @@ export default {
           Password: process.env.EMAIL_API,
           To: process.env.EMAIL_USER,
           From: this.email,
-          Subject: this.enquiry,
+          Subject: process.env.EMAIL_TITLE + ' ' + this.enquiry,
           Body:
             '<b>Name: </b>' +
             this.name +

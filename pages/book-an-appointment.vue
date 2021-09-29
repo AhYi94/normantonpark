@@ -456,7 +456,7 @@ export default {
           Password: process.env.EMAIL_API,
           To: process.env.EMAIL_USER,
           From: this.email,
-          Subject: 'Book An Appointment',
+          Subject: process.env.EMAIL_TITLE + ' Book An Appointment',
           Body:
             '<b>Visit Date: </b>' +
             this.date +
