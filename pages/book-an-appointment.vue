@@ -374,6 +374,7 @@
         <!---->
       </section>
     </div>
+    <button @click.prevent="test()">Test</button>
   </div>
 </template>
 <script>
@@ -450,10 +451,8 @@ export default {
 
       if (!this.errors.length) {
         // eslint-disable-next-line
-        Email.send({
-          Host: 'smtp.gmail.com',
-          Username: process.env.EMAIL_USER,
-          Password: process.env.EMAIL_API,
+        this.$axios
+        .post('http://localhost/mail/send_mail.php', {
           To: process.env.EMAIL_USER,
           From: this.email,
           Subject: process.env.EMAIL_TITLE + ' Book An Appointment',
@@ -472,9 +471,12 @@ export default {
             this.mobile +
             '<br><b>Level Of Interest: </b>' +
             this.interest,
-        }).then(() => {
+        }).then((response) => {
+          console.log(response.data)
           this.success = true
           this.reset()
+        }).catch( (error) => {
+          console.log(error)
         })
       }
     },
